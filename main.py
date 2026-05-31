@@ -30,7 +30,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'hacktechspy1@gmail.com'
 
 # CHANGE THIS TO YOUR GMAIL APP PASSWORD
-app.config['MAIL_PASSWORD'] = 'nsdn bzke joxp fiqv'
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
 
 mail = Mail(app)
 
